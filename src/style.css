@@ -65,9 +65,11 @@ nav {
 }
 
 /* start images */
-#cocoslogo {
-    height: 70px;
+.image {
     margin-right: auto;
+}
+.cocoslogo {
+    height: 70px;
 }
 .cocoimg {
     height: 800px;
