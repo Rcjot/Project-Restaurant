@@ -1,4 +1,6 @@
 import homeDisplay from './home';
+import menuDisplay from './menu';
+import aboutDisplay from './about';
 
 console.log('alsdfi');
 
@@ -18,10 +20,10 @@ console.log('alsdfi');
                 homeDisplay();
             });
             this.menuBtn.addEventListener('click', () => {
-                console.log('menu');
+                menuDisplay();
             });
-            this.menuBtn.addEventListener('click', () => {
-                console.log('about');
+            this.aboutBtn.addEventListener('click', () => {
+                aboutDisplay();
             })
         }
     }
