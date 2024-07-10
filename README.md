@@ -8,3 +8,7 @@ es6, bundlers and webpack are very overwhelming..
 
 rascal cocos logo source: https://www.cocos-jpn.co.jp/entertainment/001/
 
+
+
+
+styling is still exhausting...
