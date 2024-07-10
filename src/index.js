@@ -9,6 +9,7 @@ console.log('alsdfi');
 (function(){
     const mainModule = {
         init: function(){
+            homeDisplay.init();
             this.cacheDOM();
             this.btnFunctions();
             this.cacheLogo();

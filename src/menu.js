@@ -92,6 +92,9 @@ const menuDisplay = {
         const h1Name = document.createElement('h1');
         h1Name.textContent = `${food.h1Name}`;
         fooddesc.appendChild(h1Name);
+
+        const h2Price = document.createElement('h2');
+        h2Price.textContent = `${food.h2Price}`;
         
         if (myFood === 'myMatcha'){
             const raanaDiv = document.createElement('div');
@@ -105,14 +108,13 @@ const menuDisplay = {
             raanaDiv.appendChild(raanaImg);
             raanaDiv.appendChild(raanaP);      
             fooddesc.appendChild(raanaDiv);
+
         }else{
             const pText = document.createElement('p');
             pText.innerHTML = food.pText;
             fooddesc.appendChild(pText);
         }
 
-        const h2Price = document.createElement('h2');
-        h2Price.textContent = `${food.h2Price}`;
 
         if (food.second) {
             console.log(food);

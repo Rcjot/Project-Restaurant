@@ -72,7 +72,7 @@ nav {
 
 /* start Menu */
     #contentMenu {
-        margin: 20px 128px;
+        margin: 128px 128px;
         flex: 1;
         display: grid;
         grid-template-columns: 1fr;
