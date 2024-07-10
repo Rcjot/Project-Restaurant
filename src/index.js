@@ -11,30 +11,31 @@ console.log('alsdfi');
         init: function(){
             this.cacheDOM();
             this.btnFunctions();
+            this.cacheLogo();
         },
         cacheDOM: function(){
             this.homeBtn = document.querySelector('#homebtn');
             this.menuBtn = document.querySelector('#menubtn');
             this.aboutBtn = document.querySelector('#aboutbtn');
+        },
+        cacheLogo: function(){
             const cocosContain = document.querySelector('.image');
-
             const cocosLogo = new Image();
             cocosLogo.src = cocos;
             cocosLogo.classList.add('cocoslogo'); 
-
             cocosContain.appendChild(cocosLogo);
         },
         btnFunctions: function(){
             this.homeBtn.addEventListener('click', () => {
-                homeDisplay();
+                homeDisplay.init();
             });
             this.menuBtn.addEventListener('click', () => {
-                menuDisplay();
+                menuDisplay.init();
             });
             this.aboutBtn.addEventListener('click', () => {
                 aboutDisplay();
             })
-        }
+        },
     }
     mainModule.init();
 })();

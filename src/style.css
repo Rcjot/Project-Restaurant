@@ -10,7 +10,7 @@
     --Gamboge: rgb(229, 167, 16, 0.6);
     --DawnPink: rgb(247, 240, 239);
     --Cowboy: rgb(81, 44, 42, 0.8);
-    --MuleFawn: rgb(158, 76, 52);
+    --MuleFawn: rgb(158, 76, 52, 0.6);
 }
 
 body {
@@ -34,46 +34,117 @@ nav {
     gap: 64px;
 }
 
-#contentHome {
+#content{
     flex: 1;
-    max-height: var(--content-height) ;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
 }
 
-#right {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    padding-top: 200px;
-    gap: 30px;
-}
-#hr {
-    width: 90%;
-}
-#right h1 {
-    font-size:5em;
-}
-#right p {
-    font-size: 1.3em;
-}
+/* start Home  */
+    #contentHome {
+        flex: 1;
+        max-height: var(--content-height) ;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
-#reserveBtn {
-    margin-top: 160px;
-    width: 20%;
-}
+    }
+
+    #right {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 200px;
+        gap: 30px;
+    }
+    #hr {
+        width: 90%;
+    }
+    #right h1 {
+        font-size:5em;
+    }
+    #right p {
+        font-size: 1.3em;
+    }
+
+    #reserveBtn {
+        margin-top: 160px;
+        width: 20%;
+    }
+/* Home end */
+
+/* start Menu */
+    #contentMenu {
+        margin: 20px 128px;
+        flex: 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1fr, 6);
+        gap: 32px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .raanaDiv{
+        display: flex;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .raana{
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+        border-radius: 64px;
+        width: 150px;
+
+    }
+    
+    #menuFood {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .foodimg {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 32px;
+        padding: 10px 0px;
+        background-color: var(--MuleFawn);
+        width: 450px;
+        max-height: 200px;
+        padding: 10px 32px;
+    }
+
+    .secondMenu {
+        justify-content: flex-end;
+    }
+
+    .fooddesc {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+/* Menu end */
 
 /* start images */
-.image {
-    margin-right: auto;
-}
-.cocoslogo {
-    height: 70px;
-}
-.cocoimg {
-    height: 800px;
-}
+    .image {
+        margin-right: auto;
+    }
+    .cocoslogo {
+        height: 70px;
+    }
+    .cocoallimg {
+        height: 800px;
+    }
+    #food {
+        height: 200px;
+    }
+
 /* images end */
 
 footer {
@@ -85,3 +156,50 @@ footer {
     flex-grow: 0;
     color: white;
 }
+
+/* nav buttons */
+.navBtn {
+    background-color: transparent;
+    border: 0px;
+    font-size: 1.3em;
+}
+
+/* nav buttons */
+
+/* reserve button */
+    #reserveBtn {
+    background: var(--MuleFawn);
+    border: 1px solid var(--MuleFawn);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    }
+
+    #reserveBtn:hover,
+    #reserveBtn:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: var(--MuleFawn);
+    }
+
+    #reserveBtn:active {
+    opacity: .5;
+    }
+/* button */
