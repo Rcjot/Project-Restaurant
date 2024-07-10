@@ -34,7 +34,7 @@ console.log('alsdfi');
                 menuDisplay.init();
             });
             this.aboutBtn.addEventListener('click', () => {
-                aboutDisplay();
+                aboutDisplay.init();
             })
         },
     }

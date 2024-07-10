@@ -131,6 +131,22 @@ nav {
 
 /* Menu end */
 
+/* start About */
+    #contentAbout {
+        padding-top: 30px;
+        flex: 1;
+        display: flex;
+    }
+    .aboutRight {
+        padding-top: 8%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        width: 40%;
+    }
+
+/* About end */
+
 /* start images */
     .image {
         margin-right: auto;
@@ -143,6 +159,9 @@ nav {
     }
     #food {
         height: 200px;
+    }
+    .cocoran {
+        height: 800px;
     }
 
 /* images end */
