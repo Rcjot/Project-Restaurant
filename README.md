@@ -1,5 +1,7 @@
 # Project-Restaurant
 
+live preview: https://rcjot.github.io/Project-Restaurant/
+
 Hi, this is project restaurant
 
 went on a long hiatus of 2 weeks >:()
